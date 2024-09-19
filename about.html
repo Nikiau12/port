@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Kotrelev</title>
+    <link rel="icon" href="Скан 38 (1).png" type="image/png" sizes="64x64">
+    <!-- Используйте 'favicon.png', если используете PNG -->
+    <style>
+          html, body {
+        overflow-x: hidden; /* Скрыть горизонтальную прокрутку */
+        overflow-y: auto;   /* Позволить вертикальную прокрутку */
+        margin: 0;          /* Убрать отступы */
+        padding: 0;         /* Убрать отступы */
+      }
+
+      body {
+        font-family: 'Stolzl Book', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+      }
+
+      header {
+        background-color: transparent;
+        color: #ffffff;
+        padding: 0rem 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Вертикальное размещение элементов */
+        align-items: center; /* Центрирование по горизонтали */
+        position: relative;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        z-index: 0;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        transform: translateY(-57%);
+        transform: translateX(-70%);
+        letter-spacing: 1px;
+        transition: color 0.1s ease-in-out;
+        font-family: 'Galey', Modern Sans Serif Font;
+      }
+
+      header .subheading {
+        font-size: 1.1rem; /* Размер шрифта для Cinematographer */
+        transform: translateY(-57%);
+        transform: translateX(-141%);
+        font-family: 'Stolzl', Light;
+        color: #ffffff; /* Цвет шрифта */
+        margin-top: 0.5rem; /* Отступ сверху между заголовком и подзаголовком */
+      }
+
+      .header-nav {
+        margin-top: 1rem; /* Отступ сверху для разделения с заголовком */
+      }
+
+      .header-nav nav {
+        display: flex;
+        transform: translateX(75%);
+        gap: 3rem; /* Расстояние между кнопками, измените по необходимости */
+      }
+
+      .header-nav a {
+        color: #ffffff; /* Белый цвет для кнопок */
+        transform: translateY(-250%);
+        text-decoration: none; /* Убираем подчеркивание */
+        font-size: 0.9rem; /* Размер шрифта для кнопок */
+        font-family: 'Stolzl', Light; /* Шрифт для кнопок */
+      }
+      .about-me {
+            margin-top: 10vh; /* Отступ сверху для текста "Обо мне" */
+            padding: 1rem;
+            max-width: 1200px;
+            transform: translateY(0%);
+            transform: translateX(0%);
+            text-align: left;
+            color: #ffffff; /* Цвет текста */
+            font-size: 1.2rem;
+            font-family: 'Stolzl', Light;
+            display: flex; /* Используем Flexbox для создания столбцов */
+            flex-wrap: wrap;
+            gap: 0.1rem; /* Расстояние между столбцами */
+        }
+
+        .about-me p {
+            flex: 1; /* Каждый параграф занимает равное место */
+            min-width: 400px; /* Минимальная ширина для колонок */
+        }
+         .about-me h2 {
+            width: 100%;
+            font-size: 1rem;
+            flex-basis: 100%; /* Обеспечивает, что заголовок занимает всю ширину контейнера */
+            margin-top: 0.1rem; /* Отступ сверху для заголовков */
+            margin-bottom: 1rem; /* Отступ снизу для заголовков */
+            font-family: 'Galey', Modern Sans Serif Font; /* Шрифт для заголовков */
+        }
+            .about-me h3 {
+            width: 100%;
+            font-size: 1rem;
+            flex-basis: 100%; /* Обеспечивает, что заголовок занимает всю ширину контейнера */
+            margin-top: 2rem; /* Отступ сверху для заголовков */
+            margin-bottom: 1rem; /* Отступ снизу для заголовков */
+            font-family: 'Galey', Modern Sans Serif Font; /* Шрифт для заголовков */
+        }
+      footer {
+        background-color: transparent;
+        color: #000000;
+        text-align: left;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        border-top: none;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="!Nikita html>.html" style="color: inherit; text-decoration: none;">Nikita Kotrelev</a></h1>
+        <div class="subheading">Cinematographer</div> <!-- Новый элемент для подзаголовка -->
+        <div class="subheading">Photographer</div> <!-- Новый элемент для подзаголовка -->
+        <div class="header-nav"> <!-- Новый контейнер для навигации -->
+            <nav>
+                <a href="Video.html" id="clothing-btn">VIDEO</a>
+                <a href="photos.html" id="looks-btn">PHOTOS</a>
+                <a href="about.html" id="about-btn">ABOUT ME</a>
+                <a href="CONTACT.html" id="about-btn">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Блок с текстом "Обо мне" -->
+    <div class="about-me">
+        <h2>VIDEOS</h2>
+        <p>● Lighter  || Voland (Воланд), (2022 -, Russia) a film directed by Mikhail
+            Lokshin</p>
+        <p>● Camera mechanic || Les voix d’Oléron/The voices of Oleron/Голоса
+            олерона(2022,Russia/France)</p>
+            <p>● Grafic Designer || "BM production" || (2023</p>
+            <p>● Camera mechanic || Sketches about Freedom (Этюды о свободе), second
+                season (2021-2022, Russia) - a mini-series directed by Vladimir Mirzoev</p>
+                <p>● Cameraman and Sound engineer|| Saugotuvė Paberžėje (2021-2022, Lithuania)</p>
+                <p>● Focus puller || While Rome Burns (2021, Russia),
+                    a short film directed by Max
+                   Scherr</p>
+                </p>● Cameraman || I AM DYING (Я ПОДЫХАЮ) || (2022, Russia) a music video by MAZERDARK  </p>
+                <h3>CONTEST</h3>
+                <p>I am a professional photographer, my specialization is genre photography. Recently I became a prize-winner of the Street Photo Russia contest - http://streetphotorussia.ru/ . </p>
+</body>
+</html>

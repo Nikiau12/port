@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikita Kotrelev</title>
+     <!-- Добавляем favicon -->
+     <link rel="icon" href="Скан 38 (1).png" type="image/png" sizes="64x64">
+  <!-- Используйте 'favicon.png', если используете PNG -->
+    <style>
+      html, body {
+        overflow-x: hidden; /* Скрыть горизонтальную прокрутку */
+        overflow-y: auto;   /* Позволить вертикальную прокрутку */
+        margin: 0;          /* Убрать отступы */
+        padding: 0;         /* Убрать отступы */
+      }
+
+      body {
+        font-family: 'Stolzl Book', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+      }
+
+      header {
+        background-color: transparent;
+        color: #ffffff;
+        padding: 0rem 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Вертикальное размещение элементов */
+        align-items: center; /* Центрирование по горизонтали */
+        position: relative;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        z-index: 0;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        transform: translateY(-57%);
+        transform: translateX(-70%);
+        letter-spacing: 1px;
+        transition: color 0.1s ease-in-out;
+        font-family: 'Galey', Modern Sans Serif Font;
+      }
+
+      header .subheading {
+        font-size: 1.1rem; /* Размер шрифта для Cinematographer */
+        transform: translateY(-57%);
+        transform: translateX(-141%);
+        font-family: 'Stolzl', Light;
+        color: #ffffff; /* Цвет шрифта */
+        margin-top: 0.5rem; /* Отступ сверху между заголовком и подзаголовком */
+      }
+
+      .header-nav {
+        margin-top: 1rem; /* Отступ сверху для разделения с заголовком */
+      }
+
+      .header-nav nav {
+        display: flex;
+        transform: translateX(75%);
+        gap: 3rem; /* Расстояние между кнопками, измените по необходимости */
+      }
+
+      .header-nav a {
+        color: #ffffff; /* Белый цвет для кнопок */
+        transform: translateY(-250%);
+        text-decoration: none; /* Убираем подчеркивание */
+        font-size: 0.9rem; /* Размер шрифта для кнопок */
+        font-family: 'Stolzl', Light; /* Шрифт для кнопок */
+      }
+
+      .video-background {
+        position: absolute;
+        top: 20vh; /* Опущено ниже на 10vh */
+        left: 0;
+        width: 100%;
+        height: 60vh; /* Видео занимает половину высоты экрана */
+        object-fit: cover;
+        z-index: -4; /* Видео за другими элементами */
+      }
+
+      .text-below-video {
+        margin-top: 70vh; /* Отступ сверху равен высоте видео */
+        padding: 2rem;
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        font-family: 'Galey', Modern Sans Serif Font; /* Применяем шрифт Galey */
+      }
+      .gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    object-fit: cover; /* Обеспечиваем, чтобы изображения заполняли контейнер */
+    gap: 10px;
+    width: 100%;
+}
+
+.gallery-item {
+  width: calc(33.333% - 0.5rem);
+  max-width: 1000px;
+  height: 400px; /* Задаем фиксированную высоту для всех изображений */
+  position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height:100% ;
+    object-fit: cover; /* Обеспечиваем, чтобы изображения заполняли контейнер */
+    cursor: pointer;
+}
+
+/* Стиль для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal.active {
+    display: flex;
+}
+
+      footer {
+        background-color: transparent;
+        color: #000000;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        border-top: none;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+
+    </style>
+</head>
+<body>
+    <!-- Видео на фоне -->
+    <video autoplay muted class="video-background" id="background-video">
+        <source src="сима в автобусе 1.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    
+    <header>
+      <h1><a href="!Nikita html>.html" style="color: inherit; text-decoration: none;">Nikita Kotrelev</a></h1>
+        <div class="subheading">Cinematographer</div> <!-- Новый элемент для подзаголовка -->
+        <div class="subheading">Photographer</div> <!-- Новый элемент для подзаголовка -->
+        <div class="header-nav"> <!-- Новый контейнер для навигации -->
+            <nav>
+                <a href="Video.html" id="clothing-btn">VIDEO</a>
+                <a href="photos.html" id="looks-btn">PHOTOS</a>
+                <a href="about.html" id="about-btn">ABOUT ME</a>
+                <a href="CONTACT.html" id="about-btn">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Текст под видео -->
+    <div class="text-below-video">
+      <p>Новые работы</p>
+    </div>
+
+    <div class="gallery-section">
+      <div class="gallery-item">
+          <img src="грузия деревня_5.PNG" alt="Photo 1">
+      </div>
+      <div class="gallery-item">
+          <img src="грузия первые дни _8.PNG" alt="Photo 2">
+      </div>
+      <div class="gallery-item">
+          <img src="IMG_8190.JPG" alt="Photo 3">
+      </div>
+      <div class="gallery-item">
+        <img src="DSCF2510.png" alt="Photo 3">
+    </div>
+      <!-- Добавьте столько фотографий, сколько необходимо -->
+  </div>
+  
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+      <img id="modal-image" src="" alt="Enlarged Photo">
+  </div>
+
+     
+   
+
+    <script>
+      // Видео смена
+      const videos = [
+        'сима в автобусе 1.mp4',
+        'тима в автобусе 2 copy.mp4',
+      ];
+
+      let currentVideoIndex = 0;
+      const backgroundVideo = document.getElementById('background-video');
+
+      backgroundVideo.addEventListener('ended', () => {
+          currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+          backgroundVideo.src = videos[currentVideoIndex];
+          backgroundVideo.play();
+      });
+
+      // Получаем модальное окно и изображение внутри него
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modal-image');
+
+// Функция для открытия модального окна
+document.querySelectorAll('.gallery-item img').forEach(img => {
+    img.addEventListener('click', function() {
+        modal.style.display = 'flex';
+        modalImg.src = this.src;
+    });
+});
+
+// Закрытие модального окна при нажатии за его пределами
+modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+    </script>
+</body>
+</html>
